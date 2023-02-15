@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Version-Catalog"
-include ':app'
+include(":app")
