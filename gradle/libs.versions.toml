@@ -9,6 +9,9 @@ junit = "4.13.2"
 ext-junit = "1.1.5"
 espresso-core = "3.5.1"
 
+androidGradlePlugin = "7.4.1"
+kotlinAndroidGradlePlugin = "1.8.0"
+
 [libraries]
 core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
 appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
@@ -19,3 +22,8 @@ navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.
 junit = { module = "junit:junit", version.ref = "junit" }
 ext-junit = { module = "androidx.test.ext:junit", version.ref = "ext-junit" }
 espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin"}
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin"}
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinAndroidGradlePlugin"}
